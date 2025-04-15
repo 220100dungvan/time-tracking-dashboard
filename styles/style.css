@@ -37,7 +37,13 @@ a {
 body {
   background-color: var(--clr-neutral-dark-blue);
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
 }
 
 .dashboard {
@@ -48,9 +54,6 @@ body {
   align-items: center;
   font-family: "Rubik", sans-serif;
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: -moz-max-content;
   width: max-content;
   /*GOOD*/
@@ -147,33 +150,21 @@ body {
 }
 .dashboard .widgets__item:nth-child(1) {
   background-color: var(--clr-primary-work);
-  background-image: url(../images/icon-work.svg);
-  /* Styles for item 1 */
 }
 .dashboard .widgets__item:nth-child(2) {
-  background-image: url(../images/icon-play.svg);
   background-color: var(--clr-primary-play);
-  /* Styles for item 2 */
 }
 .dashboard .widgets__item:nth-child(3) {
-  background-image: url(../images/icon-study.svg);
   background-color: var(--clr-primary-study);
-  /* Styles for item 3 */
 }
 .dashboard .widgets__item:nth-child(4) {
-  background-image: url(../images/icon-exercise.svg);
   background-color: var(--clr-primary-exercise);
-  /* Styles for item 4 */
 }
 .dashboard .widgets__item:nth-child(5) {
-  background-image: url(../images/icon-social.svg);
   background-color: var(--clr-primary-social);
-  /* Styles for item 5 */
 }
 .dashboard .widgets__item:nth-child(6) {
-  background-image: url(../images/icon-self-care.svg);
   background-color: var(--clr-primary-self-care);
-  /* Styles for item 6 */
 }
 .dashboard .widgets__item-content {
   background-color: var(--clr-neutral-dark-desaturated-blue);

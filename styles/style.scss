@@ -42,7 +42,13 @@ a {
 body {
   background-color: var(--clr-neutral-dark-blue);
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
 }
 
 .dashboard {
@@ -53,9 +59,9 @@ body {
   align-items: center;
   font-family: 'Rubik', sans-serif;
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
   width: max-content;
   /*GOOD*/
 

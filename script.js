@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                     widgetItems.forEach((item, index) => {
                         const currentData = data[index].timeframes[timeframe];
-                        item.style.backgroundImage = `url(./images/icon-${data[index].title.toLowerCase()}.svg)`;
+                        item.style.backgroundImage = `url(../images/icon-${data[index].title.toLowerCase()}.svg)`;
                         item.querySelector(".widgets__item-title").textContent = data[index].title;
                         item.querySelector(".widgets__timeframes-current").textContent = `${currentData.current}hrs`;
                         item.querySelector(".widgets__timeframes-previous").textContent = `Last week - ${currentData.previous}hrs`;
